@@ -1,0 +1,9 @@
+@@include('jquery.js');
+@@include('jquery.nice-select.js');
+@@include('mCustomScrollbar.min.js');
+@@include('jquery.validate.min.js');
+@@include('jquery.maskedinput.min.js');
+@@include('svgxuse.min.js');
+@@include('lozad.min.js');
+@@include('slick.min.js');
+@@include('jquery.fancybox.js');

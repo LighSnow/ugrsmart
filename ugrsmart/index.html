@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ugrasmart</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <!-- START HEADER -->
+    <header>
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__nav-bar">
+                    <div class="nav-bar__left">
+                        <a href="#" class="logo">
+                            <svg class="logo-svg">
+                                <use xlink:href="/svg/sprite.svg#logo"></use>
+                            </svg>
+                        </a>
+                        <ul class="nav-bar__navigation">
+                            <li>
+                                <a class="nav-bar__link" href="#">О компании</a>
+                            </li>
+                            <li>
+                                <a class="nav-bar__link" href="#">
+                                    Каталог
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-bar__link" href="#">Услуги</a>
+                            </li>
+                            <li>
+                                <a class="nav-bar__link nav-bar__submenu-link" href="#">Покупателям
+                                    <svg class="arrow-down-svg">
+                                        <use xlink:href="/svg/sprite.svg#arrow-down"></use>
+                                    </svg>
+                                </a>
+                                <ul class="nav-bar__submenu">
+                                    <li><a class="nav-bar__link" href="#">Сертификаты</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Отзывы</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Галерея</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Новости</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="nav-bar__link" href="#">Вакансии</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav-bar__right">
+                        <div class="search">
+                            <svg class="loop-svg search-open">
+                                <use xlink:href="/svg/sprite.svg#loop"></use>
+                            </svg>
+                            <form action="/" class="search-form">
+                                <div class="input__wrapper">
+                                    <input type="text" name="search" id="search" placeholder="Поиск" required>
+                                </div>
+                                <button type="submit">
+                                    <svg class="loop-svg">
+                                        <use xlink:href="/svg/sprite.svg#loop"></use>
+                                    </svg>
+                                </button>
+                            </form>
+                            <span class="search-close"></span>
+                        </div>
+                        <div class="phone">
+                            <div class="phone-svg_wrapper">
+                                <svg class="phone-svg header-red-ball">
+                                    <use xlink:href="/svg/sprite.svg#phone"></use>
+                                </svg>
+                            </div>
+                            <div class="phone__info">
+                                <a href="tel:8(800)250-34-76">8 (800) 250-34-76</a>
+                                <p>Бесплатный единый номер</p>
+                            </div>
+                        </div>
+                        <div class="town">
+                            <div class="point-arrow-svg">
+                                <svg class="point-arrow-svg header-blue-ball">
+                                    <use xlink:href="/svg/sprite.svg#arrow"></use>
+                                </svg>
+                            </div>
+                            <div class="town__select_wrapper">
+                                <select class="town__select" name="town-select" id="town">
+                                    <option value="1">Сургут</option>
+                                    <option value="2">Краснодар</option>
+                                    <option value="3">Санкт-Петербург</option>
+                                    <option value="4">Москва</option>
+                                    <option value="5">Казань</option>
+                                    <option value="6">Екатеринбург</option>
+                                    <option value="7">Челябинск</option>
+                                    <option value="8">Краснодар</option>
+                                    <option value="9">Санкт-Петербург</option>
+                                    <option value="10">Москва</option>
+                                    <option value="11">Челябинск</option>
+                                    <option value="12">Краснодар</option>
+                                    <option value="13">Санкт-Петербург</option>
+                                    <option value="14">Москва</option>
+                                </select>
+                                <p>Ваш город</p>
+                            </div>
+                        </div>
+                        <div class="burger__menu">
+                            <span></span>
+                            <span class="circle"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__menu_wrapper">
+                    <div class="header__menu">
+                        <div class="header-menu__inner">
+                            <ul class="nav-bar__navigation">
+                                <li>
+                                    <a class="nav-bar__link" href="#">О компании</a>
+                                </li>
+                                <li>
+                                    <a class="nav-bar__link" href="#">
+                                        Каталог
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-bar__link" href="#">Услуги</a>
+                                </li>
+                                <li>
+                                    <a class="nav-bar__link" href="#">Покупателям
+                                        <svg class="arrow-down-svg">
+                                            <use xlink:href="/svg/sprite.svg#arrow-down"></use>
+                                        </svg>
+                                    </a>
+                                    <ul class="nav-bar__submenu">
+                                        <li>
+                                            <a class="nav-bar__link" href="#">Сертификаты</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Отзывы</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Галерея</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Новости</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="nav-bar__link" href="#">Вакансии</a>
+                                </li>
+                            </ul>
+                            <div class="header-menu__content">
+                                <div class="town">
+                                    <div class="point-arrow-svg">
+                                        <svg class="point-arrow-svg header-blue-ball">
+                                            <use xlink:href="/svg/sprite.svg#arrow"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="town__select_wrapper">
+                                        <select class="town__select" name="town-select" id="town1">
+                                            <option value="1">Сургут</option>
+                                            <option value="2">Краснодар</option>
+                                            <option value="3">Санкт-Петербург</option>
+                                            <option value="4">Москва</option>
+                                            <option value="5">Казань</option>
+                                            <option value="6">Екатеринбург</option>
+                                            <option value="7">Челябинск</option>
+                                            <option value="8">Краснодар</option>
+                                            <option value="9">Санкт-Петербург</option>
+                                            <option value="10">Москва</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="phone">
+                                    <div class="phone__info">
+                                        <a href="tel:8(800)250-34-76">8 (800) 250-34-76</a>
+                                        <p>Бесплатный единый номер</p>
+                                    </div>
+                                </div>
+                                <form action="/" class="search-form search-form-mobile">
+                                    <div class="input__wrapper">
+                                        <input type="text" name="search" id="search1" placeholder="Поиск" required>
+                                    </div>
+                                    <button type="submit">
+                                        <svg class="loop-svg">
+                                            <use xlink:href="/svg/sprite.svg#loop"></use>
+                                        </svg>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container slider__wrapper">
+        <div class="product__slider">
+            <div class="product__slide">
+                <h3 class="product-slide__title">
+                    Тахограф с блоком СКЗИ
+                </h3>
+                <p class="product-slide__subtitle">
+                    VDO DTCO 3283
+                </p>
+                <a href="#" class="btn">Перейти</a>
+                <ul class="product-slide__list">
+                    <li>
+                        <svg class="brief-svg">
+                            <use xlink:href="/svg/sprite.svg#brief"></use>
+                        </svg>
+                        Автобусы
+                    </li>
+                    <li>
+                        <svg class="brief-svg">
+                            <use xlink:href="/svg/sprite.svg#brief"></use>
+                        </svg>
+                        Тягачи и спецтехника
+                    </li>
+                    <li>
+                        <svg class="brief-svg">
+                            <use xlink:href="/svg/sprite.svg#brief"></use>
+                        </svg>
+                        Транспорт перевозящий опасный груз
+                    </li>
+                </ul>
+                <div class="product-slide__item">
+                    <div class="product-slide__info">
+                        <h5>3 года гарантии</h5>
+                        <p>на сервисное обслуживание</p>
+                    </div>
+                    <img class="product-slide__img lozad" src="img/load.gif" alt="IMG" data-src="img/slider/item1.png"
+                        data-srcset="img/slider/item1@2x.png">
+                </div>
+            </div>
+            <div class="product__slide">
+                <h3 class="product-slide__title">
+                    Тахограф с блоком СКЗИ
+                </h3>
+                <p class="product-slide__subtitle">
+                    VDO DTCO 3283
+                </p>
+                <a href="#" class="btn">Перейти</a>
+                <ul class="product-slide__list">
+                    <li>
+                        <svg class="brief-svg">
+                            <use xlink:href="/svg/sprite.svg#brief"></use>
+                        </svg>
+                        Автобусы
+                    </li>
+                    <li>
+                        <svg class="brief-svg">
+                            <use xlink:href="/svg/sprite.svg#brief"></use>
+                        </svg>
+                        Тягачи и спецтехника
+                    </li>
+                    <li>
+                        <svg class="brief-svg">
+                            <use xlink:href="/svg/sprite.svg#brief"></use>
+                        </svg>
+                        Транспорт перевозящий опасный груз
+                    </li>
+                </ul>
+                <div class="product-slide__item">
+                    <div class="product-slide__info">
+                        <h5>3 года гарантии</h5>
+                        <p>на сервисное обслуживание</p>
+                    </div>
+                    <img src="img/load.gif" alt="IMG" data-src="img/slider/item1.png"
+                        data-srcset="img/slider/item1@2x.png" class="product-slide__img lozad">
+                </div>
+            </div>
+            <div class="product__slide">
+                <h3 class="product-slide__title">
+                    Тахограф с блоком СКЗИ
+                </h3>
+                <p class="product-slide__subtitle">
+                    VDO DTCO 3283
+                </p>
+                <a href="#" class="btn">Перейти</a>
+                <ul class="product-slide__list">
+                    <li>
+                        <svg class="brief-svg">
+                            <use xlink:href="/svg/sprite.svg#brief"></use>
+                        </svg>
+                        Автобусы
+                    </li>
+                    <li>
+                        <svg class="brief-svg">
+                            <use xlink:href="/svg/sprite.svg#brief"></use>
+                        </svg>
+                        Тягачи и спецтехника
+                    </li>
+                    <li>
+                        <svg class="brief-svg">
+                            <use xlink:href="/svg/sprite.svg#brief"></use>
+                        </svg>
+                        Транспорт перевозящий опасный груз
+                    </li>
+                </ul>
+                <div class="product-slide__item">
+                    <div class="product-slide__info">
+                        <h5>3 года гарантии</h5>
+                        <p>на сервисное обслуживание</p>
+                    </div>
+                    <img src="img/load.gif" data-src="img/slider/item1.png" data-srcset="img/slider/item1@2x.png"
+                        alt="IMG" class="product-slide__img lozad">
+                </div>
+            </div>
+            <div class="product__slide">
+                <h3 class="product-slide__title">
+                    Тахограф с блоком СКЗИ
+                </h3>
+                <p class="product-slide__subtitle">
+                    VDO DTCO 3283
+                </p>
+                <a href="#" class="btn">Перейти</a>
+                <ul class="product-slide__list">
+                    <li>
+                        <svg class="brief-svg">
+                            <use xlink:href="/svg/sprite.svg#brief"></use>
+                        </svg>
+                        Автобусы
+                    </li>
+                    <li>
+                        <svg class="brief-svg">
+                            <use xlink:href="/svg/sprite.svg#brief"></use>
+                        </svg>
+                        Тягачи и спецтехника
+                    </li>
+                    <li>
+                        <svg class="brief-svg">
+                            <use xlink:href="/svg/sprite.svg#brief"></use>
+                        </svg>
+                        Транспорт перевозящий опасный груз
+                    </li>
+                </ul>
+                <div class="product-slide__item">
+                    <div class="product-slide__info">
+                        <h5>3 года гарантии</h5>
+                        <p>на сервисное обслуживание</p>
+                    </div>
+                    <img src="img/load.gif" srcset="img/slider/item1@2x.png" data-src="img/slider/item1.png"
+                        data-srcset="img/slider/item1@2x.png" alt="IMG" class="product-slide__img lozad">
+                </div>
+            </div>
+            <div class="product__slide">
+                <h3 class="product-slide__title">
+                    Тахограф с блоком СКЗИ
+                </h3>
+                <p class="product-slide__subtitle">
+                    VDO DTCO 3283
+                </p>
+                <a href="#" class="btn">Перейти</a>
+                <ul class="product-slide__list">
+                    <li>
+                        <svg class="brief-svg">
+                            <use xlink:href="/svg/sprite.svg#brief"></use>
+                        </svg>
+                        Автобусы
+                    </li>
+                    <li>
+                        <svg class="brief-svg">
+                            <use xlink:href="/svg/sprite.svg#brief"></use>
+                        </svg>
+                        Тягачи и спецтехника
+                    </li>
+                    <li>
+                        <svg class="brief-svg">
+                            <use xlink:href="/svg/sprite.svg#brief"></use>
+                        </svg>
+                        Транспорт перевозящий опасный груз
+                    </li>
+                </ul>
+                <div class="product-slide__item">
+                    <div class="product-slide__info">
+                        <h5>3 года гарантии</h5>
+                        <p>на сервисное обслуживание</p>
+                    </div>
+                    <img src="img/load.gif" data-src="img/slider/item1.png" data-srcset="img/slider/item1@2x.png"
+                        alt="IMG" class="product-slide__img lozad">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="advantages">
+        <div class="s-container">
+            <h2 class="title">
+                Почему выбирают нас?
+            </h2>
+            <div class="advantages__items">
+                <div class="advantages__item">
+                    <div class="advantages__img_wrapper">
+                        <img data-src="img/advantages/deal.png" data-srcset="img/advantages/deal@2x.png"
+                            src="img/load.gif" alt="IMG" class="advantages__img lozad">
+                    </div>
+                    <p>
+                        Команда профессионалов и экспертов контролируют изменения законодательства в транспортной сфере,
+                        с целью исключить получения штрафных санкций и простоя техники наших Заказчиков за невыполнения
+                        этих требований!
+                    </p>
+                </div>
+                <div class="advantages__item">
+                    <div class="advantages__img_wrapper">
+                        <img src="img/load.gif" data-src="img/advantages/car.png"
+                            data-srcset="img/advantages/car@2x.png" alt="IMG" class="advantages__img lozad">
+                    </div>
+                    <p>
+                        Понимание бизнес-процессов Заказчика. Мобильные бригады готовы подстроится под специфику работы
+                        компаний и произвести работы в удобное для Заказчика время, в том числе в выходные и праздничные
+                        дни!
+                    </p>
+                </div>
+                <div class="advantages__item">
+                    <div class="advantages__img_wrapper">
+                        <img src="img/load.gif" data-src="img/advantages/trophy.png"
+                            data-srcset="img/advantages/trophy@2x.png" alt="IMG" class="advantages__img lozad">
+                    </div>
+                    <p>
+                        Мы имеем статус гарантийного центра практически по всему спектру оборудования, что позволяет в
+                        кратчайшие сроки восстанавливать его работоспособность. А чтобы техника не простаивала на время
+                        ремонта предоставляем подменное оборудование
+                    </p>
+                </div>
+                <div class="advantages__item">
+                    <div class="advantages__img_wrapper">
+                        <img src="img/load.gif" data-src="img/advantages/tools.png"
+                            data-srcset="img/advantages/tools@2x.png" alt="IMG" class="advantages__img lozad">
+                    </div>
+                    <p>
+                        Наша компания имеет возможность оказывать широкий спектр услуг в транспортной сфере,
+                        соответственно у Заказчика отпадает необходимость поиска множества подрядчиков для исполнения
+                        своих нужд!
+                    </p>
+                </div>
+                <div class="advantages__item">
+                    <div class="advantages__img_wrapper">
+                        <img src="img/load.gif" data-src="img/advantages/geo.png"
+                            data-srcset="img/advantages/geo@2x.png" alt="IMG" class="advantages__img lozad">
+                    </div>
+                    <p>
+                        Для оперативности реагирования на заявки по обслуживанию техники у нас организована широкая
+                        филиальная сеть: Москва, Санкт-Петербург, Сургут, Нефтеюганск, Новый Уренгой, Нижневартовск,
+                        Когалым, Лангепас, Тобольск <br><br>Также имеем возможность выезда специалистов по всей
+                        территории России
+                    </p>
+                </div>
+                <div class="advantages__item">
+                    <div class="advantages__img_wrapper">
+                        <img src="img/load.gif" data-src="img/advantages/client.png"
+                            data-srcset="img/advantages/client@2x.png" alt="IMG" class="advantages__img lozad">
+                    </div>
+                    <p>
+                        Ценность клиентов. Каждый заказчик для нас уникален и ценен, независимо от количества
+                        транспортных средств в его владении!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sale__tachograph sale">
+        <div class="s-container">
+            <h2 class="title">
+                Продажа тахографов
+            </h2>
+            <p class="subtitle">
+                Тахограф — контрольное устройство, устанавливаемое на борту автотранспортных средств. Предназначено для
+                регистрации скорости, режима труда, отдыха водителей и членов экипажа.
+            </p>
+            <div class="tachograph__items sale__items">
+                <a href="#" class="tachograph__item sale__item">
+                    <div class="sale-item__img_wrapper">
+                        <span></span>
+                        <img src="img/load.gif" data-src="img/tachographs/tachograph1.png"
+                            data-srcset="img/tachographs/tachograph1@2x.png" alt="" class="sale-item__img lozad">
+                    </div>
+                    <p class="sale-item__name">Б/У тахографы</p>
+                </a>
+                <a href="#" class="tachograph__item sale__item">
+                    <div class="sale-item__img_wrapper">
+                        <span>NEW</span>
+                        <img src="img/load.gif" data-src="img/tachographs/tachograph2.png"
+                            data-srcset="img/tachographs/tachograph2@2x.png" alt="" class="sale-item__img lozad">
+                    </div>
+                    <p class="sale-item__name">Тахограф Микас</p>
+                </a>
+                <a href="#" class="tachograph__item sale__item">
+                    <div class="sale-item__img_wrapper">
+                        <span></span>
+                        <img src="img/load.gif" data-src="img/tachographs/tachograph3.png"
+                            data-srcset="img/tachographs/tachograph3@2x.png" alt="" class="sale-item__img lozad">
+                    </div>
+                    <p class="sale-item__name">Тахограф VDO DTCO 3283 СКЗИ</p>
+                </a>
+                <a href="#" class="tachograph__item sale__item">
+                    <div class="sale-item__img_wrapper">
+                        <span></span>
+                        <img src="img/load.gif" data-src="img/tachographs/tachograph4.png"
+                            data-srcset="img/tachographs/tachograph4@2x.png" alt="" class="sale-item__img lozad">
+                    </div>
+                    <p class="sale-item__name">Тахограф ШТРИХ - Тахо RUS</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="control">
+        <div class="s-container">
+            <div class="control__inner">
+                <p class="title control-title">
+                    Зачем устанавливать устройство контроля?
+                </p>
+                <div class="control__img_wrapper">
+                    <img class="lozad" src="img/load.gif" data-src="img/russia.jpg" data-srcset="img/russia@2x.jpg"
+                        alt="IMG">
+                </div>
+                <div class="control__info">
+                    <p class="title">
+                        Зачем устанавливать устройство контроля?
+                    </p>
+                    <div class="control-info__description">
+                        <p class="control__subtitle">
+                            Приказ от 12.02.2013 №36
+                        </p>
+                        <p class="control__text">
+                            Установка тахографов обязательна как для пассажирских, так и для грузовых транспортных
+                            средств независимо от формы собственности". В соответствии с 11.23 КоАП РФ инспектор ГИБДД
+                            имеет право оштрафовать собственников ТС и водителей за несоблюдение этого Приказа. Этот акт
+                            действует по всей территории РФ.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="consultation">
+        <div class="container">
+            <div class="consultation__inner">
+                <h3 class="title">
+                    Закажите бесплатную консультацию по покупке и установке тахографа:
+                </h3>
+                <form class="consultation__form on-succes" action="/" method="POST" onsubmit="return false;">
+                    <div class="consultation-input__wrapper input__wrapper">
+                        <input type="text" name="username" id="username" placeholder="Имя">
+                    </div>
+                    <div class="consultation-input__wrapper input__wrapper">
+                        <input type="text" name="phone" id="phone" placeholder="Телефон">
+                    </div>
+                    <div class="button__wrapper">
+                        <svg class="brief-svg">
+                            <use xlink:href="/svg/sprite.svg#brief"></use>
+                        </svg>
+                        <button type="submit">
+                            Отправить
+                        </button>
+                    </div>
+                    <p>Нажимая кнопку "Оставить заявку", Вы автоматически соглашаетесь с <a href="#">политикой
+                            конфиденциальности</a> и даете свое согласие на <a href="#">обработку персональных
+                            данных</a>.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="sale__dopog sale">
+        <div class="s-container">
+            <h2 class="title">
+                Допог
+            </h2>
+            <p class="subtitle">
+                Европейское соглашение о международной дорожной перевозке опасных грузов
+            </p>
+            <div class="dopog__items sale__items">
+                <a href="#" class="dopog__item sale__item">
+                    <div class="sale-item__img_wrapper">
+                        <span></span>
+                        <img src="img/load.gif" data-src="img/dopog/item1.png" data-srcset="img/dopog/item1@2x.png"
+                            alt="IMG" class="sale-item__img lozad">
+                    </div>
+                    <p class="sale-item__name">Установка и ремонт АБС</p>
+                </a>
+                <a href="#" class="dopog__item sale__item">
+                    <div class="sale-item__img_wrapper">
+                        <span></span>
+                        <img src="img/load.gif" data-src="img/dopog/item2.png" data-srcset="img/dopog/item2@2x.png"
+                            alt="IMG" class="sale-item__img lozad">
+                    </div>
+                    <p class="sale-item__name">Установка устройств ограничения скорости</p>
+                </a>
+                <a href="#" class="dopog__item sale__item">
+                    <div class="sale-item__img_wrapper">
+                        <span></span>
+                        <img src="img/load.gif" data-src="img/dopog/item3.png" data-srcset="img/dopog/item3@2x.png"
+                            alt="IMG" class="sale-item__img lozad">
+                    </div>
+                    <p class="sale-item__name">Установка выключателя массы</p>
+                </a>
+                <a href="#" class="dopog__item sale__item">
+                    <div class="sale-item__img_wrapper">
+                        <span></span>
+                        <img src="img/load.gif" data-src="img/dopog/item4.png" data-srcset="img/dopog/item4@2x.png"
+                            alt="IMG" class="sale-item__img lozad">
+                    </div>
+                    <p class="sale-item__name">Установка энергоаккумуляторов</p>
+                </a>
+                <a href="#" class="dopog__item sale__item">
+                    <div class="sale-item__img_wrapper">
+                        <span></span>
+                        <img src="img/load.gif" data-src="img/dopog/item3.png" data-srcset="img/dopog/item3@2x.png"
+                            alt="IMG" class="sale-item__img lozad">
+                    </div>
+                    <p class="sale-item__name">Установка выключателя массы</p>
+                </a>
+                <a href="#" class="dopog__item sale__item">
+                    <div class="sale-item__img_wrapper">
+                        <span></span>
+                        <img src="img/load.gif" data-src="img/dopog/item4.png" data-srcset="img/dopog/item4@2x.png"
+                            alt="IMG" class="sale-item__img lozad">
+                    </div>
+                    <p class="sale-item__name">Установка энергоаккумуляторов</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="support">
+        <div class="container">
+            <span class="red-circle circle circle1"></span>
+            <span class="blue-circle circle circle2"></span>
+            <span class="blue-circle circle circle3"></span>
+            <span class="blue-circle circle circle4"></span>
+            <h3 class="title">
+                Техподдержка
+            </h3>
+            <p class="subtitle">
+                Для эффективного взаимодействия с клиентами в компании «Югра Смарт Сервис» функционирует Центр
+                технической поддержки, обеспечивающий предоставление услуг на самом высоком уровне.
+            </p>
+            <a href="mailto:uss.hmao@mail.ru" class="support__email">uss.hmao@mail.ru</a>
+            <a href="tel:8(800)250-34-76" class="support__phone">8 (800) 250-34-76</a>
+        </div>
+    </div>
+    <div class="informatorium">
+        <div class="s-container">
+            <h3 class="title">
+                Информаторий
+            </h3>
+            <div class="informatorium__items">
+                <a href="#" class="informatorium__item">
+                    <div class="informatorium-item__img_wrapper">
+                        <img src="img/load.gif" data-src="img/informatorium/item1.png"
+                            data-srcset="img/informatorium/item1@2x.png" alt="IMG"
+                            class="informatorium-item__img lozad">
+                    </div>
+                    <p>Что такое блок СКЗИ (НКМ) тахографа?</p>
+                </a>
+                <a href="#" class="informatorium__item">
+                    <div class="informatorium-item__img_wrapper">
+                        <img src="img/load.gif" data-src="img/informatorium/item2.png"
+                            data-srcset="img/informatorium/item2@2x.png" alt="IMG"
+                            class="informatorium-item__img lozad">
+                    </div>
+                    <p>Что такое блок СКЗИ (НКМ) тахографа?</p>
+                </a>
+                <a href="#" class="informatorium__item">
+                    <div class="informatorium-item__img_wrapper">
+                        <img src="img/load.gif" data-src="img/informatorium/item3.png"
+                            data-srcset="img/informatorium/item3@2x.png" alt="IMG"
+                            class="informatorium-item__img lozad">
+                    </div>
+                    <p>Что такое блок СКЗИ (НКМ) тахографа?</p>
+                </a>
+                <a href="#" class="informatorium__item">
+                    <div class="informatorium-item__img_wrapper">
+                        <img src="img/load.gif" data-src="img/informatorium/item1.png"
+                            data-srcset="img/informatorium/item1@2x.png" alt="IMG"
+                            class="informatorium-item__img lozad">
+                    </div>
+                    <p>Что такое блок СКЗИ (НКМ) тахографа?</p>
+                </a>
+                <a href="#" class="informatorium__item">
+                    <div class="informatorium-item__img_wrapper">
+                        <img src="img/load.gif" data-src="img/informatorium/item2.png"
+                            data-srcset="img/informatorium/item2@2x.png" alt="IMG"
+                            class="informatorium-item__img lozad">
+                    </div>
+                    <p>Что такое блок СКЗИ (НКМ) тахографа?</p>
+                </a>
+                <a href="#" class="informatorium__item">
+                    <div class="informatorium-item__img_wrapper">
+                        <img src="img/load.gif" data-src="img/informatorium/item3.png"
+                            data-srcset="img/informatorium/item3@2x.png" alt="IMG"
+                            class="informatorium-item__img lozad">
+                    </div>
+                    <p>Что такое блок СКЗИ (НКМ) тахографа?</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="questions">
+        <div class="container">
+            <h3 class="title">Остались вопросы? Напишите нам</h3>
+            <form class="questions__form on-succes" method="POST" action="/">
+                <div class="questions-form__left">
+                    <div class="input__wrapper">
+                        <input type="text" name="username" id="name" placeholder="Имя">
+                    </div>
+                    <div class="input__wrapper">
+                        <input type="text" name="phone1" id="phone1" placeholder="Телефон">
+                    </div>
+                </div>
+                <div class="questions-form__right">
+                    <textarea name="text" id="text" placeholder="Сообщение"></textarea>
+                </div>
+                <div class="questions-form__bottom">
+                    <div class="button__wrapper">
+                        <svg class="brief-svg">
+                            <use xlink:href="/svg/sprite.svg#brief"></use>
+                        </svg>
+                        <button type="submit">
+                            Отправить
+                        </button>
+                    </div>
+                    <p class="questions__text">Нажимая кнопку "Оставить заявку", Вы автоматически соглашаетесь с <a
+                            href="#">политикой конфиденциальности</a> и даете свое согласие на <a href="#">обработку
+                            персональных данных</a>.</p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <a href="mailto:uss.hmao@mail.ru" class="footer__email">uss.hmao@mail.ru</a>
+                <a href="tel:8(800)250-34-76" class="footer__phone">8 (800) 250-34-76</a>
+                <div class="footer__navigation_wrapper">
+                    <nav class="footer__navigation">
+                        <a href="#" class="footer-navigation__link">
+                            О компании
+                        </a>
+                        <a href="#" class="footer-navigation__link">
+                            Оборудование и продукты
+                        </a>
+                        <a href="#" class="footer-navigation__link">
+                            Услуги
+                        </a>
+                        <a href="#" class="footer-navigation__link">
+                            Новости
+                        </a>
+                        <a href="#" class="footer-navigation__link">
+                            Контакты
+                        </a>
+                        <a data-fancybox data-src="#map" href="javascript:;" class="footer-navigation__link">
+                            Показать на карте
+                          </a>
+                    </nav>
+                </div>
+                <p class="footer__map">
+                    ул. Энергетиков 4, офис 410 г. Сургут, ХМАО-Югра 628406 (<a class="footer-map__link"
+                        href="#">показать на карте</a>)
+                </p>
+                <div class="footer__made">
+                    Сделано в
+                    <a href="https://rusodot.ru/" target="_blank">
+                        <svg width="64" height="14" viewBox="0 0 64 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.4805 8.08602V0.472656H19.1901V7.99073C19.1901 9.75724 20.2071 10.9716 22.1455 10.9716C24.0838 10.9716 25.0803 9.75602 25.0803 7.99073V0.472656H27.8093V8.06769C27.8093 11.2196 25.9641 13.3648 22.1455 13.3648C18.3244 13.3648 16.4805 11.2 16.4805 8.08602Z"
+                                fill="black" />
+                            <path
+                                d="M34.1289 11.3507L35.5769 9.30073C36.462 10.2316 37.8349 11.0086 39.5663 11.0086C41.0349 11.0086 41.7492 10.3257 41.7492 9.60371C41.7492 7.36319 34.5236 8.90125 34.5236 4.13557C34.5236 2.02822 36.33 0.28125 39.2842 0.28125C41.2795 0.28125 42.9345 0.888413 44.1767 2.04776L42.69 4.02196C41.6754 3.07273 40.3194 2.6366 39.0396 2.6366C37.8918 2.6366 37.2526 3.14848 37.2526 3.90835C37.2526 5.92041 44.4588 4.57293 44.4588 9.30073C44.4588 11.617 42.8219 13.364 39.4355 13.364C37.0274 13.364 35.296 12.5467 34.1289 11.3507Z"
+                                fill="black" />
+                            <path
+                                d="M50.7773 6.76247C50.7773 2.91426 53.5657 0.158203 57.3794 0.158203C61.2114 0.158203 63.9997 2.91426 63.9997 6.76247C63.9997 10.6095 61.2114 13.3655 57.3794 13.3655C53.5657 13.3655 50.7773 10.6095 50.7773 6.76247ZM61.2296 6.76247C61.2296 4.37047 59.7125 2.57097 57.3794 2.57097C55.0464 2.57097 53.5475 4.37047 53.5475 6.76247C53.5475 9.13615 55.0464 10.954 57.3794 10.954C59.7125 10.954 61.2296 9.13615 61.2296 6.76247Z"
+                                fill="black" />
+                            <path
+                                d="M7.33943 8.31324C8.69424 7.99073 10.0878 6.79472 10.0878 4.55421C10.0878 2.20008 8.48841 0.472656 5.87203 0.472656H0V2.84511H2.67208H2.87064H5.47733C6.55004 2.84511 7.35881 3.49015 7.35881 4.55421C7.35881 5.61705 6.54883 6.2633 5.47733 6.2633H2.87064H2.67208H0.00121052V13.1363H2.67329V8.63698H4.63104L7.09487 13.1376H10.1629L7.33943 8.31324Z"
+                                fill="black" />
+                        </svg>
+                    </a>
+                </div>
+                <p class="footer__copyright">
+                    © 2020, Югра Смарт Сервис
+                </p>
+            </div>
+        </div>
+    </footer>
+    <div class="cookie">
+        <div class="s-container">
+            <p>Продолжая просматривать этот сайт, вы соглашаетесь на использование cookie файлов</p>
+            <a href="#" class="btn">Хорошо</a>
+        </div>
+    </div>
+
+    <div id="modal-order" class="modal">
+  <div class="modal__inner">
+    <h3>Заказать Тахограф VDO DTCO 3283 СКЗИ</h3>
+    <span>Заполните форму и мы свяжемся с вами в ближайшее время</span>
+    <form class="modal__form modal__order on-succes" method="POST" action="/">
+      <div class="modal__row">
+        <div class="input__wrapper">
+          <input type="text" name="username" id="username" placeholder="Имя">
+        </div>
+        <div class="input__wrapper">
+          <input type="text" name="phonemodal" id="phonemodal" placeholder="Телефон">
+        </div>
+        <div class="button__wrapper">
+          <svg class="brief-svg">
+            <use xlink:href="./svg/sprite.svg#brief"></use>
+          </svg>
+          <button type="submit">
+            Отправить
+          </button>
+        </div>
+      </div>
+      <div class="modal__row-bottom">
+        <p class="questions__text">Нажимая кнопку "Оставить заявку", Вы автоматически соглашаетесь с <a
+            href="#">политикой конфиденциальности</a> и даете свое согласие на <a href="#">обработку
+            персональных данных</a>.</p>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div id="modal-feedback" class="modal modal-feedback">
+  <div class="modal__inner">
+    <h3>Обратная связь</h3>
+    <span>Заполните форму и мы свяжемся с вами в ближайшее время</span>
+    <form class="modal__form modal__feedback on-succes" method="POST" action="/">
+      <div class="modal__row">
+        <div class="input__wrapper">
+          <input type="text" name="phonemodal1" id="phonemodal1" placeholder="Телефон">
+        </div>
+        <div class="button__wrapper">
+          <svg class="brief-svg">
+            <use xlink:href="./svg/sprite.svg#brief"></use>
+          </svg>
+          <button type="submit">
+            Отправить
+          </button>
+        </div>
+      </div>
+      <div class="modal__row-bottom">
+        <p class="questions__text">Нажимая кнопку "Оставить заявку", Вы автоматически соглашаетесь с <a
+            href="#">политикой конфиденциальности</a> и даете свое согласие на <a href="#">обработку
+            персональных данных</a>.</p>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+<div id="modal-thanks" class="modal modal-thanks">
+  <div class="modal__inner">
+    <svg class="thanks">
+      <use xlink:href="/svg/sprite.svg#thanks"></use>
+    </svg>
+    <h3>Спасибо!</h3>
+    <p>
+      В ближайшее время мы свяжемся с вами
+    </p>
+  </div>
+</div>
+
+
+<div id="modal-resume" class="modal-resume modal">
+  <div class="modal__inner">
+    <h3>Отклик на вакансию</h3>
+    <span>Заполните форму и мы свяжемся с вами в ближайшее время</span>
+    <form class="modal__resume on-succes" method="POST" action="/">
+      <div class="questions-form__left">
+        <div class="input__wrapper">
+          <input type="text" name="username1" id="username1" placeholder="Имя">
+        </div>
+        <div class="input__wrapper">
+          <input type="email" name="email" id="email" placeholder="Почта">
+        </div>
+        <div class="input__wrapper">
+          <input type="text" name="phonemodal2" id="phonemodal2" placeholder="Телефон">
+        </div>
+      </div>
+      <div class="questions-form__right">
+        <textarea name="text" id="text1" placeholder="Расскажите о себе в произвольной форме"></textarea>
+      </div>
+      <div class="file-upload">
+        <input class="file-upload__input" type="file" name="myFile[]" id="myFile" multiple>
+        <button class="file-upload__button" type="button">
+          <svg>
+            <use xlink:href="/svg/sprite.svg#resume"></use>
+          </svg>
+          <span>
+            Прикрепить резюме
+           </span></button>
+        <span class="file-upload__label">Файл не выбран</span>
+      </div>
+      <div class="questions-form__bottom">
+        <div class="button__wrapper">
+          <svg class="brief-svg">
+            <use xlink:href="/svg/sprite.svg#brief"></use>
+          </svg>
+          <button type="submit">
+            Отправить
+          </button>
+        </div>
+        <p class="questions__text">Нажимая кнопку "Оставить заявку", Вы автоматически соглашаетесь с <a
+            href="#">политикой конфиденциальности</a> и даете свое согласие на <a href="#">обработку
+            персональных данных</a>.</p>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+<div id="map" class="modal"></div>
+
+
+<script>
+  // Initialize and add the map
+  function initMap() {
+    // The location of Uluru
+    var uluru = {
+      lat: 61.238067,
+      lng: 73.405987
+    };
+    // The map, centered at Uluru
+    var map = new google.maps.Map(
+      document.getElementById('map'), {
+        zoom: 17,
+        center: uluru
+      });
+    // The marker, positioned at Uluru
+    var marker = new google.maps.Marker({
+      position: {
+        lat: 61.238067,
+        lng: 73.405987
+      },
+      map: map,
+      icon: './svg/marker.svg',
+    });
+  }
+</script>
+
+<script defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDu93I0n3wQBYWgLMiQa8D1mvXmAJ6EzM0&callback=initMap">
+</script>
+
+
+    <!-- <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            var uluru = {
+                lat: -25.344,
+                lng: 131.036
+            };
+            // The map, centered at Uluru
+            var map = new google.maps.Map(
+                document.getElementById('map'), {
+                    zoom: 4,
+                    center: uluru
+                });
+            // The marker, positioned at Uluru
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+    </script>
+
+    <script defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDu93I0n3wQBYWgLMiQa8D1mvXmAJ6EzM0&callback=initMap">
+    </script> -->
+
+    <script src="js/libs.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>
