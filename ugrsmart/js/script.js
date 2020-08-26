@@ -69,6 +69,12 @@ $(document).ready(function () {
       thisArrow.classList.toggle('active');
       thisLink.classList.toggle('active')
     });
+    thisLink.addEventListener('click', function (e) {
+      e.preventDefault();
+      subMenu.classList.toggle('open');
+      thisArrow.classList.toggle('active');
+      thisLink.classList.toggle('active')
+    });
   }
 
 
@@ -528,7 +534,7 @@ $(document).ready(function () {
 
 
 
-  $(".modal__order").length && $(".modal__order").validate({ rules: { username: { required: !0 }, phonemodal: { required: !0, minlength: 10 }, } });
+  $(".modal__order").length && $(".modal__order").validate({ rules: { username2: { required: !0 }, phonemodal2: { required: !0, minlength: 10 }, } });
 
   $("#phonemodal").length && $("#phonemodal").mask("+9(999) 999-9999");
 

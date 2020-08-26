@@ -329,7 +329,7 @@
                 </ul>
               </li>
             </ul>
-            <a class="btn btn-feedback" href="#">Обратная связь</a>
+            <a class="btn btn-feedback" data-fancybox data-src="#modal-feedback" href="javascript:;">Обратная связь</a>
           </div>
           <div class="card-product__item service-card__item">
             <div class="card-product__header service-card__header">
@@ -338,7 +338,7 @@
                   data-srcset="img/service-card/service-card-1@2x.jpg">
               </div>
               <div class="service-card__item-request">
-                <a class="btn" href="#">Заказать услугу в 1 клик</a>
+                <a class="btn" data-fancybox data-src="#modal-order" href="javascript:;">Заказать услугу в 1 клик</a>
                 <p>Оформите заявку на услугу, мы свяжемся с вами в ближайшее время и ответим на все интересующие
                   вопросы.</p>
               </div>
@@ -536,9 +536,6 @@
               <a href="#" class="footer-navigation__link">
                 Новости
               </a>
-              <a href="#" class="footer-navigation__link">
-                Контакты
-              </a>
               <a data-fancybox data-src="#map" href="javascript:;" class="footer-navigation__link">
                 Показать на карте
               </a>
@@ -582,7 +579,7 @@
     <form class="modal__form modal__order on-succes" method="POST" action="/">
       <div class="modal__row">
         <div class="input__wrapper">
-          <input type="text" name="username" id="username" placeholder="Имя">
+          <input type="text" name="username2" id="username2" placeholder="Имя">
         </div>
         <div class="input__wrapper">
           <input type="text" name="phonemodal" id="phonemodal" placeholder="Телефон">
