@@ -686,7 +686,7 @@
           margin: 0px 0px 30px 0px;
         }
 
-        p {
+        &>p {
           font-family: Muller;
           font-weight: 300;
           font-size: 18px;
@@ -1956,7 +1956,7 @@
       height: 100%;
       border-radius: 10px;
       display: block;
-
+      object-fit: cover;
     }
 
     &-big {
@@ -2277,6 +2277,333 @@
   }
 }
 
+.block {
+  display: flex;
+  padding: 20px 20px;
+  width: 100%;
+  position: relative;
+
+  @media only screen and (max-width: 650px) {
+    padding: 20px 0;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 42px;
+    top: 33px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #ec4a42;
+    z-index: -1;
+
+    @media only screen and (max-width: 650px) {
+      left: 22px;
+    }
+
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+
+    span {
+      font-weight: 600;
+    }
+  }
+
+  &-group {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    margin: 0 -20px;
+
+    @media only screen and (max-width: 650px) {
+      flex-direction: column;
+      margin: 0;
+      justify-content: center;
+    }
+
+    .check-svg {
+      width: 100%;
+      flex: 0 0 30px;
+      height: 30px;
+      margin-right: 15px;
+      position: relative;
+    }
+  }
+}
+
+.info-block {
+  border: 10px solid #EC4A42;
+  padding: 42px;
+
+  @media only screen and (max-width: 650px) {
+    padding: 15px;
+  }
+
+  h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #d03434;
+    padding-bottom: 30px
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 300;
+
+    &:not(:last-child) {
+      padding-bottom: 30px;
+    }
+  }
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  padding: 0 5px;
+  margin: 0px 0px 30px 0px;
+
+  @media only screen and (max-width: 767px) {
+    width: 50%;
+  }
+
+  @media only screen and (max-width: 414px) {
+    width: 100%;
+  }
+
+  h3 {
+    border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 25px;
+    text-align: center;
+    color: #48C6E4;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  ul {
+    text-align: center;
+    list-style-type: none;
+    padding-left: 0;
+
+    @media only screen and (max-width: 414px) {
+      width: 100%;
+    }
+
+    li {
+      padding: 8px 20px;
+      font-weight: 300;
+      font-size: 12px;
+      background-color: transparent;
+      color: #000;
+
+      &:nth-child(2n+1) {
+        background-color: #48C6E4;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.table-group {
+  display: flex;
+  margin: 20px -5px;
+
+  @media only screen and (max-width: 767px) {
+    flex-wrap: wrap;
+  }
+}
+
+.info-columns {
+  display: flex;
+  margin: 20px -10px;
+
+  @media only screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__item {
+    width: 33.3333333%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+    margin: 0px 0px 30px 0px;
+
+    @media only screen and (max-width: 767px) {
+      width: 100%;
+    }
+
+    h3 {
+      font-size: 24px;
+      font-weight: 700;
+      color: #48C6E4;
+    }
+
+    .line {
+      background-color: #dcdcdc;
+      width: 66px;
+      height: 3px;
+      margin: 32px 0;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+}
+
+.change {
+  &__block {
+    display: flex;
+    flex-wrap: wrap;
+    background: #f3f3f3;
+    padding: 50px 24px 0px 24px;
+  }
+
+  &__item {
+    width: 50%;
+    display: flex;
+    padding: 0 20px;
+
+    @media only screen and (max-width: 767px) {
+      width: 100%;
+
+      &:not(:last-child) {
+        margin: 0px 0px 30px 0px;
+      }
+    }
+
+    @media only screen and (max-width: 414px) {
+      padding: 0;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 26px;
+      font-weight: 300;
+
+      span {
+        font-weight: 600;
+      }
+    }
+
+    .check-svg {
+      flex: 0 0 22px;
+      width: 100%;
+      height: 21px;
+      margin-right: 15px;
+
+      @media only screen and (max-width: 414px) {
+        margin-right: 10px;
+      }
+    }
+
+    &-big {
+      width: 100%;
+      padding: 50px 24px;
+
+      @media only screen and (max-width: 414px) {
+        padding: 50px 0px;
+      }
+
+      p {
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.what-is {
+  margin: 20px 0px;
+
+  h3 {
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 30px;
+  }
+
+  &__body {
+    display: flex;
+
+    img {
+      @media only screen and (max-width: 1050px) {
+        display: none;
+      }
+    }
+  }
+
+  &__text {
+    padding: 3px 0px 0px 0px;
+
+    p {
+      font-size: 16px;
+      line-height: 21px;
+      padding-bottom: 32px;
+    }
+  }
+}
+
+.has-rights {
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+
+  @media only screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+
+  &__img {
+    max-width: 281px;
+    width: 100%;
+    img {
+      width: 100%;
+      display: block;
+    }
+    @media only screen and (max-width: 767px) {
+      margin: 0px 0px 30px 0px;
+    }
+  }
+
+  &__text {
+    margin: 0px 0px 0px 40px;
+    font-size: 18px;
+    line-height: 28px;
+
+    @media only screen and (max-width: 767px) {
+      margin: 0px 0px 00px 0px;
+    }
+
+    span {
+      font-weight: 600;
+    }
+
+    p {
+      font-weight: 300;
+
+      &:not(:last-child) {
+        margin: 0px 0px 20px 0px;
+      }
+    }
+  }
+}
+
+
+
+
 .fancybox-slide--html {
   padding: 6px 70px;
 
@@ -2368,6 +2695,7 @@ form.succes .button__wrapper .brief-svg {
 
   &__form {
     margin: 0px 0px 75px 0px;
+
     .search-form {
       width: 100%;
       position: static;
@@ -2394,6 +2722,7 @@ form.succes .button__wrapper .brief-svg {
 
   &__row {
     margin: 0px 0px 25px 0px;
+
     h3 {
       font-weight: 600;
       font-size: 30px;
@@ -2404,9 +2733,11 @@ form.succes .button__wrapper .brief-svg {
       color: #000000;
       margin: 0px 0px 50px 0px;
     }
+
     .catalog__items {
       padding: 0;
     }
+
     .sale-item__img_wrapper {
       padding: 0;
     }
